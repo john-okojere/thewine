@@ -1,116 +1,239 @@
-
 <!doctype html>
 <html lang="en" class="h-100">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.108.0">
-    <title>TheWine beweries</title>
+    <title>The Wine Brewies</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<meta name="theme-color" content="#712cf9">
 
 
     <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
         }
-      }
 
-      .b-example-divider {
-        height: 3rem;
-        background-color: rgba(0, 0, 0, .1);
-        border: solid rgba(0, 0, 0, .15);
-        border-width: 1px 0;
-        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-      }
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
 
-      .b-example-vr {
-        flex-shrink: 0;
-        width: 1.5rem;
-        height: 100vh;
-      }
+        .b-example-divider {
+            height: 3rem;
+            background-color: rgba(0, 0, 0, .1);
+            border: solid rgba(0, 0, 0, .15);
+            border-width: 1px 0;
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+        }
 
-      .bi {
-        vertical-align: -.125em;
-        fill: currentColor;
-      }
+        .b-example-vr {
+            flex-shrink: 0;
+            width: 1.5rem;
+            height: 100vh;
+        }
 
-      .nav-scroller {
-        position: relative;
-        z-index: 2;
-        height: 2.75rem;
-        overflow-y: hidden;
-      }
+        .bi {
+            vertical-align: -.125em;
+            fill: currentColor;
+        }
 
-      .nav-scroller .nav {
-        display: flex;
-        flex-wrap: nowrap;
-        padding-bottom: 1rem;
-        margin-top: -1px;
-        overflow-x: auto;
-        text-align: center;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-      }
+        .nav-scroller {
+            position: relative;
+            z-index: 2;
+            height: 2.75rem;
+            overflow-y: hidden;
+        }
+
+        .nav-scroller .nav {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-bottom: 1rem;
+            margin-top: -1px;
+            overflow-x: auto;
+            text-align: center;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
     </style>
 
-    
+
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
-  </head>
-  <body class="d-flex h-100 text-center text-bg-dark " style="background-image: linear-gradient(324deg, #300808 0%, transparent 305%), url(img/red-wine-1590591610.jpg); padding: 20px;">
-    
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">The<span style="font-size: xx-large;">Wine</span></h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <a class="nav-link fw-bold py-1 rounded active" aria-current="page" href="index.html">Home</a>
-        <a class="nav-link fw-bold py-1 px-0" href="shelf.html">Shelf</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">About</a>
-        <a class="nav-link fw-bold py-1 px-0" href="#">Contact</a>
-        <div class="dropdown nav-link fw-bold py-1">
-          <button class="btn btn-outline-secondary dropdown-toggle"
-              style="border: 1px solid white;color: white;" type="button" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              Profile
-          </button>
-          <ul class="dropdown-menu">
-              <li><a href="add_wine.html" class="dropdown-item" type="a" data-toggle="modal"
-                      data-target="#myModal">Add Wine</a></li>
-              <li><a href="#" class="dropdown-item" type="a">Notification</a></li>
-              <li><button class="dropdown-item" type="button">Logout</button></li>
-          </ul>
-      </div>
-      </nav>
+</head>
+
+<body class="d-flex h-100 text-center text-bg-dark"
+    style="background-attachment: fixed;background-image: linear-gradient(324deg, #300808 0%, transparent 305%), url(img/red-wine-1590591610.jpg);background-repeat: no-repeat;background-size: cover;">
+
+    <div class=" d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start p-2 mb-0">The Wine</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" id="home-btn" href="#"><i
+                            class="fa fa-home"></i> Home</a>
+                    <a class="nav-link fw-bold py-1 px-0" href="#" id="shelf-btn"><i class="fa fa-wine-bottle"></i>
+                        Shelf</a>
+                    <a href="#" class="nav-link fw-bold py-1 px-0 mr-2" id="cart-btn"><i
+                            class="fa fa-shopping-cart"></i> Cart</a>
+                    <a href="#" class="nav-link fw-bold py-1 px-0 mr-2" id="addwine-btn"><i class="fa fa-plus"></i> Add
+                        Wine</a>
+                    <a href="#" class="nav-link fw-bold py-1 px-0 mr-2" id="notification-btn"> <i
+                            class="fa fa-bell"></i> Notifications - <small><span id="notupdatecart">Cart (0)</span> - <span id="notupdateshelf">Shelf (0)</span></small> </a>
+                </nav>
+            </div>
+        </header>
+        <main class="px-auto">
+            <main class="px-3 text-center text-light" id="home">
+                <h1>Are you Tasty?</h1>
+                <p class="lead">Purchase portable wine with a long shelf life, a nice casing, which is ideal for
+                    gift-giving, delicious to consume, and attractive to look at in your refrigerator. This is
+                    advantageous for your pocketbook and stomach.</p>
+                <p class="lead">
+                    <a href="#" onclick="shelf()" class="btn btn-lg btn-light fw-bold border-white bg-white">Get a
+                        Drink</a>
+                </p>
+            </main>
+            <div id="addwine">
+                <div class="modal modal-signin position-static d-block py-5" tabindex="-1" role="dialog"
+                    id="modalSignin ">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content rounded-4 shadow text-dark">
+                            <div class="modal-header p-5 pb-4 border-bottom-0">
+                                <!-- <h1 class="modal-title fs-5" >Modal title</h1> -->
+                                <h3 class="fw-bold mb-0">Add Newly Imported Wine</h3>
+                                <div id="resultmessage"></div>
+                            </div>
+
+                            <div class="modal-body p-5 pt-0">
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="image" class="form-control rounded-3" id="floatingImage"
+                                        placeholder="">
+                                    <label for="floatingImage">Image Link</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="text" name="name" class="form-control rounded-3" id="floatingInput"
+                                        placeholder="">
+                                    <label for="floatingInput">Name of Wine</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="number" name="price" class="form-control rounded-3" id="floatingprice"
+                                        placeholder="">
+                                    <label for="floatingprice">Price</label>
+                                </div>
+
+                                <a href="#" class="w-100 mb-2 btn btn-lg rounded-3 btn-danger" id="submitwine"
+                                    type="submit">Upload</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="shelf">
+                <div class="album my-5 bg-light" style="height: 70vh; overflow-y:scroll ;">
+                    <div class="container">
+                        <div>
+                            <div class="text-left py-5">
+                                <h1>Newly Imported Wine</h1>
+                            </div>
+                        </div>
+                        <div id="shelf-list" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="notification">
+                <a href="/"
+                    class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                    <svg class="bi pe-none me-2" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-5 fw-semibold text-light">Notifications</span>
+                </a>
+                <div class=" modal modal-signin position-static d-block"
+                    style="max-height: 400px;overflow-y: scroll;text-align: left;">
+                    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+
+                            <h4 class="text-dark text-left p-3">Shelf</h4>
+                            <div class="list-group list-group-flush border-bottom scrollarea" id="notifiShelf">
+                        </div>
+                            <h4 class="text-dark text-left p-3">Cart</h4>
+                            <div class="list-group list-group-flush border-bottom scrollarea" id="notifiCart">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cart">
+              
+
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <div>
+                <h5 class="mb-1 text-light"><a href="#" onclick="shelf()" class="text-body" style="color: white !important;"><i
+                    class="fas fa-long-arrow-alt-left me-2"></i>Continue
+                shopping</a></h5>
+                <p class="mb-0">You have items in your cart</p>
+            </div>
+            <hr>
+
+        </div>
+                <div class=" modal modal-signin position-static d-block"
+                    style="max-height: 400px;overflow-y: scroll;text-align: left;">
+                    <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+                        
+                            <div class="list-group list-group-flush border-bottom scrollarea text-dark py-1" id="cart-list" >
+                        </div>
+                    </div>
+                </div>
+             
+            </div>
+        </main>
+        <footer class="mt-auto py-5">
+            <div class="container">
+                <p class="float-end mb-1">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="mb-1"><span class="mx-3">The Wine's Shelf </span> Are you Tasty? <a href="#">Check out this
+                        wine</a>
+                </p>
+            </div>
+        </footer>
     </div>
-  </header>
 
-  <main class="px-3">
-    <h1>Are you Tasty?</h1>
-    <p class="lead">Purchase portable wine with a long shelf life, a nice casing, which is ideal for gift-giving, delicious to consume, and attractive to look at in your refrigerator. This is advantageous for your pocketbook and stomach.</p>
-    <p class="lead">
-      <a href="shelf.html" class="btn btn-lg btn-light fw-bold border-white bg-white">Get a Drink</a>
-    </p>
-  </main>
 
-  <footer class="mt-auto text-white-50">
-    <p>TheWine beweries @ 2023.</p>
-  </footer>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <script src="scripts.js"></script>
+
+</body>
+
 </html>
